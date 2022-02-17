@@ -1,7 +1,7 @@
 # nboard_sdk_gradle_plugin
-Gradle Plugin to implement Nboard SDK dependencies
+This plugin automatically adds dependencies related to CameraX.
 
-Simple add these to project level build.gradle
+Simply add these to project level build.gradle
 
 buildscript {
   repositories {
