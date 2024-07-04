@@ -4,8 +4,8 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>gcsns</groupId>
-    <artifactId>nboard_sdk_gradle_plugin</artifactId>
+    <groupId>tree</groupId>
+    <artifactId>master</artifactId>
     <version>240701</version>
     <packaging>pom</packaging>
 
