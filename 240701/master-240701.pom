@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>tree</groupId>
-    <artifactId>master</artifactId>
+    <artifactId>2.2.1</artifactId>
     <version>240701</version>
     <packaging>pom</packaging>
 
