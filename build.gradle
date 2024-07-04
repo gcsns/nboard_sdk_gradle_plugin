@@ -6,7 +6,7 @@ plugins {
 }
 
 group 'com.gamechangesns'
-version '1.0-SNAPSHOT'
+version '1.2.2'
 sourceCompatibility = 1.8
 
 repositories {
@@ -16,31 +16,31 @@ repositories {
 gradlePlugin{
     plugins{
         greetingsPlugin {
-            id = 'com.gamechangesns.saleskey'
-            implementationClass = 'com.gc.saleskey.ServicesPlugin'
+            id = 'com.gamechangesns.nboard_sdk_gradle_plugin'
+            implementationClass = 'com.gamechangesns.nboard_sdk_gradle_plugin.ServicesPlugin'
         }
     }
 }
 
 dependencies {
     implementation localGroovy()
-    compile 'org.codehaus.groovy:groovy-all:2.3.11'
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+//    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+//    testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 
 apply plugin: 'maven'
 uploadArchives {
     repositories {
         mavenDeployer {
-            repository(url: uri('/Users/neeraj/AndroidStudioProjects/experimental/custom_plugin/nboard_sdk_gradle_plugin'))
+            repository(url: uri('/Users/neeraj/AndroidStudioProjects/gamechange/custom_plugin/nboard_sdk_gradle_plugin'))
         }
     }
 }
 
 pluginBundle {
     website = 'http://gamechangesns.com/'
-    vcsUrl = 'https://github.com/gcsns/saleskey-android'
-    description = 'This plugin automatically adds commonly used dependencies like Retrofit(for Network Call), Glide(for Image Rendering), Firebase(for Cloud Messaging), Recyclerview, CardView, ConstraintLayout etc. It also enable dabtaBinding and Java 8.'
+    vcsUrl = 'https://github.com/gcsns/nboard_sdk_gradle_plugin'
+    description = 'This plugin automatically adds dependencies related to firebase and MLKit.'
     tags = ['java', 'firebase']
 
     plugins {
