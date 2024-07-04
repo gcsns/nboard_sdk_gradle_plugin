@@ -9,14 +9,6 @@
     <version>240701</version>
     <packaging>pom</packaging>
 
-
-    <modules>
-        <module>androidexample-lib</module>
-        <module>androidexample-app</module>
-        <module>androidexample-tests</module>
-    </modules>
-
-
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -27,9 +19,9 @@
             </dependency>
 
             <dependency>
-                <groupId>com.google.android</groupId>
-                <artifactId>android-test</artifactId>
-                <version>4.1.1.4</version>
+                <groupId>com.google.android.gms</groupId>
+                <artifactId>play-services-mlkit-text-recognition</artifactId>
+                <version>19.0.0</version>
                 <scope>provided</scope>
             </dependency>
 
